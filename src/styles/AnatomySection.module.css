@@ -1,0 +1,54 @@
+.anatomyContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 20px;
+  padding: 8px 20px;
+  gap: 100px;
+  margin-top: 5px;
+}
+
+.anatomyBox {
+  position: relative;
+  text-align: center;
+  flex-shrink: 0;
+  width: 55%;
+}
+
+.anatomyImage {
+    width: 215px;
+    object-fit: contain;
+    height: 370px;
+}
+
+.label {
+  position: absolute;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+}
+
+.heart {
+  top: 85px;
+  right: 0px;
+  background: #4736f1;
+  color: #fff;
+}
+
+.leg {
+  bottom: 100px;
+  left: 20px;
+  background: #00d1ff;
+  color: #000;
+}
+
+.cardSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

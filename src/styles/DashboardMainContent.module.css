@@ -1,0 +1,55 @@
+/* Disable both vertical and horizontal scrolling */
+body, html {
+  overflow: hidden;
+}
+
+.dashboardContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.leftSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  background: white;
+}
+
+.rightSection {
+    width: 492.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #f3f3f3;
+    margin-right: 8px;
+    border-bottom-right-radius: 20px;
+    height: 98%;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 0px 18px;
+  color: #2d2c6b;
+}
+
+.thisWeek {
+  margin-left: auto;
+  color: gray;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px; 
+  padding-right: 15px;
+  margin-top: -20px;
+}
+
+.arrow {
+  font-size: 10px;
+}
+

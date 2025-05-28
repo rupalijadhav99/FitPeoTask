@@ -1,0 +1,79 @@
+.header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9fb;
+  border-radius: 12px;
+  padding: 8px 12px;
+  width: 100%;
+  max-width: 53%;
+  margin-left: 18px;
+  border: 1px solid #e6e6ec;
+}
+
+.searchIcon {
+  color: #a0a0b0;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #333;
+}
+
+.bellIcon {
+  color: #4736f1;
+  font-size: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.avatarButtons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 36%;
+    gap: 12px;
+    height: 65px;
+    background: #f3f3f3;
+    padding: 0px 17px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-top-right-radius: 20px;
+}
+
+.emojiAvatar {
+  width: 36px;
+  height: 36px;
+  background-color: #00e0ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+
+.plus {
+  width: 32px;
+  height: 32px;
+  background-color: #4736f1;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

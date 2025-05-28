@@ -1,0 +1,62 @@
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card {
+  background-color: #f3f3f3;
+  padding: 16px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 150px; /* Limits card width */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.title {
+  font-size: 15px;
+}
+
+.date {
+  font-size: 12px;
+  color: #777;
+}
+
+.progressBar {
+  background: #eee;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 4px;
+}
+
+.detailsLink {
+  text-align: right;
+  color: gray;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.arrow {
+  margin-left: 4px;
+}

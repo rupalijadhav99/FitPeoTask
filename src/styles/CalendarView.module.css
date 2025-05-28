@@ -1,0 +1,94 @@
+.calendarContainer {
+  padding: 20px 15px;
+  border-radius: 20px;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #2d2c6b;
+}
+
+.calendarGrid {
+  display: flex;
+}
+
+.daysGrid {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+}
+
+.dayColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #333;
+  gap: 16px;
+  padding: 5px !important;
+}
+
+.dayLabel {
+  text-align: center;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.slots {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.slotHighlight {
+  background: #4736f1;
+  color: #fff;
+  padding: 3px 12px;
+  border-radius: 10px;
+  font-size: 10px;
+  margin-top: -3px;
+  margin-bottom: -3px;
+}
+
+.slotLight {
+  border-radius: 14px;
+  font-size: 10px;
+}
+
+.appointments {
+  margin-top: 28px;
+  display: flex;
+  gap: 16px;
+}
+
+.appointmentCard {
+  background: #e6e9fb;
+  padding: 14px 20px;
+  border-radius: 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  flex: 1;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.primary {
+  background: #4736f1;
+  color: #fff;
+}
+
+.dim {
+  opacity: 0.5;
+}
