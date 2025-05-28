@@ -7,7 +7,12 @@ const CalendarView = () => {
     <div className={styles.calendarContainer}>
       <div className={styles.calendarHeader}>
         <span>October 2021</span>
+        <div className={styles.arrows}>
+          <span>&lt;</span>
+          <span>&gt;</span>
+        </div>
       </div>
+
 
       <div className={styles.calendarGrid}>
         <div className={styles.daysGrid}>
@@ -32,11 +37,11 @@ const CalendarView = () => {
 
                     const highlightStyle = isHighlighted
                       ? {
-                          ...(slotInfo?.highlightStyle || {}),
-                          ...(slotInfo?.highlightOpacity
-                            ? { opacity: slotInfo.highlightOpacity }
-                            : {}),
-                        }
+                        ...(slotInfo?.highlightStyle || {}),
+                        ...(slotInfo?.highlightOpacity
+                          ? { opacity: slotInfo.highlightOpacity }
+                          : {}),
+                      }
                       : {};
 
                     return (
@@ -64,17 +69,16 @@ const CalendarView = () => {
         {calendarAppointments.map((appointment, idx) => (
           <div
             key={idx}
-            className={`${styles.appointmentCard} ${
-              appointment.type === 'primary' ? styles.primary : ''
-            }`}
-            style={{ maxWidth: appointment.maxWidth || 'auto' }}
+            className={`${styles.appointmentCard} ${appointment.typeStyle === 'primary' ? styles.primary : ''}`}
+            style={{ maxWidth: appointment.maxWidth }}
           >
-            <div style={{ fontWeight: 'bold' }}>{appointment.title}</div>
-            <div>{appointment.time}</div>
+            <div style={{ fontWeight: 600 }}>{appointment.type}</div>
+            <div style={{ fontSize: '12px' }}>{appointment.time}</div>
             {appointment.doctor && (
-              <div style={{ fontSize: '11px' }}>{appointment.doctor}</div>
+              <div style={{ fontSize: '11px', marginTop: "-5px" }}>{appointment.doctor}</div>
             )}
           </div>
+
         ))}
       </div>
     </div>
