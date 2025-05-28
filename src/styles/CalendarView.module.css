@@ -101,3 +101,16 @@
   color: #4736f1;
   cursor: pointer;
 }
+
+.appointmentHeader {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.iconRight {
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 1;
+}
