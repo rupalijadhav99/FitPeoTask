@@ -38,7 +38,8 @@ export const calendarSlots = {
 
 export const calendarAppointments = [
   {
-    type: 'Dentist 🦷',
+    type: 'Dentist',
+    icon: '🦷',
     time: '09:00–11:00',
     doctor: 'Dr. Cameron Williamson',
     maxWidth: '150px',
@@ -46,7 +47,8 @@ export const calendarAppointments = [
     style: { color: '#fff' }
   },
   {
-    type: 'Physiotherapy Appointment 💪',
+    type: 'Physiotherapy Appointment',
+    icon: '💪',
     time: '11:00–12:00',
     doctor: 'Dr. Kevin Djones',
     maxWidth: '220px',
