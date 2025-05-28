@@ -70,15 +70,21 @@ const CalendarView = () => {
           <div
             key={idx}
             className={`${styles.appointmentCard} ${appointment.typeStyle === 'primary' ? styles.primary : ''}`}
-            style={{ maxWidth: appointment.maxWidth }}
+            style={{ maxWidth: appointment.maxWidth, ...(appointment.style || {}) }}
           >
-            <div style={{ fontWeight: 600 }}>{appointment.type}</div>
+            <div className={styles.appointmentHeader}>
+              {appointment.type}
+              {appointment.icon && (
+                <span className={styles.iconRight}>{appointment.icon}</span>
+              )}
+            </div>
             <div style={{ fontSize: '12px' }}>{appointment.time}</div>
             {appointment.doctor && (
-              <div style={{ fontSize: '11px', marginTop: "-5px" }}>{appointment.doctor}</div>
+              <div style={{ fontSize: '11px', marginTop: '-5px' }}>
+                {appointment.doctor}
+              </div>
             )}
           </div>
-
         ))}
       </div>
     </div>
